@@ -1,3 +1,4 @@
+import 'package:coffeepedia/screens/home_screen.dart';
 import 'package:coffeepedia/screens/login_screen.dart';
 import 'package:coffeepedia/screens/signup_screen.dart';
 import 'package:flutter/material.dart';
@@ -16,10 +17,11 @@ class _AppState extends State<App> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/',
+      initialRoute: '/home',
       routes: {
-        '/': (content) => const LoginScreen(),
+        '/': (content) => const HomeScreen(),
         '/signup': (context) => const SignupScreen(),
+        '/login': (context) => const LoginScreen(),
       },
     );
   }
