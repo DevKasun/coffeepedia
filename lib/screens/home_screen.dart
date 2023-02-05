@@ -20,6 +20,8 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
+        backgroundColor: Colors.brown[600],
         title: Text("CoffeePedia"),
         actions: [
           IconButton(
@@ -33,16 +35,27 @@ class _HomeScreenState extends State<HomeScreen> {
         child: ListView.builder(
           itemCount: coffeeList.length,
           itemBuilder: (context, index) {
-            return Card(
-              child: Padding(
-                padding: const EdgeInsets.all(20.0),
-                child: Row(
-                  children: [
-                    Text(
-                      coffeeList[index]["title"],
-                      style: TextStyle(fontSize: 22.0),
-                    ),
-                  ],
+            return GestureDetector(
+              onTap: () {
+                print("Click Coffee card");
+              },
+              child: Card(
+                color: Colors.brown[300],
+                child: Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Row(
+                    children: [
+                      Image.network(coffeeList[index]["image"],
+                          width: 150, height: 150, fit: BoxFit.cover),
+                      Padding(
+                        padding: const EdgeInsets.all(10.0),
+                        child: Text(
+                          coffeeList[index]["title"],
+                          style: TextStyle(fontSize: 22.0),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             );
