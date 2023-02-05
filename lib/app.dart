@@ -13,11 +13,14 @@ class App extends StatefulWidget {
 }
 
 class _AppState extends State<App> {
+  final primaryColor = Colors.brown[600];
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(primaryColor: primaryColor),
       debugShowCheckedModeBanner: false,
-      initialRoute: '/home',
+      initialRoute: '/',
       routes: {
         '/': (content) => const HomeScreen(),
         '/signup': (context) => const SignupScreen(),
