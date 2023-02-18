@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "531231320980",
+    "project_id": "coffeepedia-ebc7f",
+    "storage_bucket": "coffeepedia-ebc7f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531231320980:android:c900020014bcb8e750fd81",
+        "android_client_info": {
+          "package_name": "com.example.coffeepedia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "531231320980-fo3c9fv7b6erspijr1cgp8j2iuqhrihm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwTYk-AL2O-Tu3Xga4Grvb9XkS-zPobBs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "531231320980-fo3c9fv7b6erspijr1cgp8j2iuqhrihm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
